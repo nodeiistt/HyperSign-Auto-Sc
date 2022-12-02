@@ -161,6 +161,7 @@ sudo systemctl enable $HS
 sudo systemctl restart $HS
 
 echo '=============== skynodes ==================='
+echo ' Special Thanks Nodeist For Original Script'
 echo -e 'check your logs : \e[1m\e[32mjournalctl -fu hid-noded -o cat\e[0m'
 echo -e "check your sync: \e[1m\e[32mcurl -s localhost:${HS_PORT}657/status | jq .result.sync_info\e[0m"
 
